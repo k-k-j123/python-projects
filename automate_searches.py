@@ -19,7 +19,7 @@ def load_index(file_path):
             return int(index_str)
     except ValueError:
         print("Error: The file does not contain a valid integer.")
-        return 0  # Default to 0 or handle as needed
+        return 0  
 
 
 def load_words(file_path):
@@ -31,7 +31,7 @@ def perform_action(words_list, i):
     app_path = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
     time.sleep(5)
     subprocess.Popen(app_path)
-    time.sleep(5)  # Allow some time for the application to open
+    time.sleep(5)  
     for _ in range(3):
         current_word = words_list[i]
         pg.moveTo(982, 62, duration=0.5)
