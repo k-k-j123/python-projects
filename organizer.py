@@ -16,8 +16,6 @@ def pickDirectory(value):
             return category
     return "MISC"
 
-# test out the pickDirectory() function
-# uncomment this line and write your code
 
 def organizeDirectory():
     for item in os.scandir():
