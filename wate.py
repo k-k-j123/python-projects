@@ -2,10 +2,10 @@ import time
 import winsound
 
 print("Water reminder script \n")
-interval = int(input("Enter interval in minutes: ")) * 60  # Convert minutes to seconds
+interval = int(input("Enter interval in minutes: ")) * 60 
 
 while True:
-    countdown = interval  # Use a separate variable for countdown
+    countdown = interval  
     while countdown:
         mins, secs = divmod(countdown, 60)
         timer = '{:02d}:{:02d}'.format(mins, secs)
